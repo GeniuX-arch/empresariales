@@ -1,5 +1,5 @@
-import { Route, Routes, Navigate } from 'react-router-dom';
-import { ReactNode, useContext, useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import {   useEffect, useState } from 'react';
 import Horario from './views/Horario';
 import Profesores from './views/Profesores';
 import CrearProfesor from './views/CrearProfesor';
@@ -16,10 +16,6 @@ import ProtectedRoute from './context/ProtectedRoute';
 
 
 
-interface PrivateRouteProps {
-  children: ReactNode;
-  // Puedes agregar otras propiedades aquí si es necesario
-}
 
 
 

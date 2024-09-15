@@ -1,6 +1,5 @@
 
-import React, { Component, useEffect, useState } from 'react';
-import { Clase } from '../interfaces/interfaces';
+import  {  useState } from 'react';
 
 
 

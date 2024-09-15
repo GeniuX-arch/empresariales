@@ -1,15 +1,13 @@
-
-import React, { useState, useContext } from "react";
+import  { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Triangle } from "react-loader-spinner";
-import Buttonxd from "./button";
 import { useAuth } from "../context/AuthContext";
 
 export default function Login() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
-  const [error, setError] = useState<string>("");
-  const [carga, setCarga] = useState(false);
+  const [error ] = useState<string>("");
+  const [carga ] = useState(false);
   const navigate = useNavigate();
   const { login } = useAuth();
 
