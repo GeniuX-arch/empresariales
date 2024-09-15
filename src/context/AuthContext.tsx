@@ -47,6 +47,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     const login = (userData: User) => {
     // Supongamos que tienes una función de autenticación que verifica el email y la contraseña.
     //validación y conexión a la db+
+    /*
         axios.get('http://localhost:8000/sanctum/csrf-cookie', { withCredentials: true })
 
 
@@ -66,10 +67,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
             console.error('Error during login:', error.response.data.message);
             });
     });
+    */
 
-    /*
-         console.log(userData.email=="0000000000@gmail.com" && userData.password=="0000000000@gmail.com")
-    const isValidUser = (userData.email=="0000000000@gmail.com" && userData.password=="0000000000@gmail.com");
+         console.log(userData.email=="000@gmail.com" && userData.password=="000@gmail.com")
+    const isValidUser = (userData.email=="000@gmail.com" && userData.password=="000@gmail.com");
     
     if (isValidUser) {
         setUser(userData);
@@ -78,7 +79,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         console.error("Invalid credentials");
         
     }
-        */
 
     
 };

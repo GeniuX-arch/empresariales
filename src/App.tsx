@@ -1,4 +1,3 @@
-
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { ReactNode, useContext, useEffect, useState } from 'react';
 import Horario from './views/Horario';

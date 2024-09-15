@@ -35,6 +35,21 @@ export default function Profesores() {
         </div>
 
         <div className='w-full max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className='bg-white rounded-lg shadow-lg' >
+              <div className='p-6 flex items-center'>
+                <img src="/perfil.png" alt="Perfil" className='h-16 w-16 rounded-full border-2 border-green-700 mr-4' />
+                <div>
+                  <p className='font-semibold text-green-900'>Carlos alberto</p>
+                  <p className="text-gray-600">Cédula: 1094800981</p>
+                  <p className="text-gray-600">Tipo de Contrato: Catedra </p>
+                </div>
+              </div>
+              <ul className='flex justify-center gap-4 py-2 bg-green-50 border-t border-green-200 rounded-b-lg'>
+                <li className="text-gray-700">Materia 1</li>
+                <li className="text-gray-700">Materia 2</li>
+                <li className="text-gray-700">Materia 3</li>
+              </ul>
+            </div>
           {profesores.map(profe => (
             <div className='bg-white rounded-lg shadow-lg' key={profe.cedula}>
               <div className='p-6 flex items-center'>
