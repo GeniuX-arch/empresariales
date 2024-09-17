@@ -69,8 +69,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     });
     */
 
-         console.log(userData.email=="000@gmail.com" && userData.password=="000@gmail.com")
-    const isValidUser = (userData.email=="000@gmail.com" && userData.password=="000@gmail.com");
+         console.log(userData.email=="0@gmail.com" && userData.password=="0@gmail.com")
+    const isValidUser = (userData.email=="0@gmail.com" && userData.password=="0@gmail.com");
     
     if (isValidUser) {
         setUser(userData);

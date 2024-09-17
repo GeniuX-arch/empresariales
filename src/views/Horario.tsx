@@ -5,7 +5,7 @@ import DropClase from "../components/DropClase";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import DragClase from "../components/DragClase";
-import CrearClase from "./CrearClase";
+import { Link } from "react-router-dom";
  // Ajusta la ruta según sea necesario
 
 
@@ -128,7 +128,15 @@ export default function Horario() {
     return (
         <>
             <Navbar />
-            <CrearClase />
+                <h1 className="text-3xl text-center" >Horarios</h1>
+            <div className="flex flex-row items-center justify-center gap-4 m-4" >
+            <Link to="/salones" className="bg-green-700 text-white font-semibold px-4 py-2 rounded-md hover:bg-green-800 transition-colors duration-300">
+                Crear Salones
+            </Link>
+            <Link to="/clases" className="bg-green-700 text-white font-semibold px-4 py-2 rounded-md hover:bg-green-800 transition-colors duration-300">
+                Crear clases
+            </Link>
+            </div>
             <div className=" min-h-screen flex flex-row justify-center items-center pt-24">
                 
                 

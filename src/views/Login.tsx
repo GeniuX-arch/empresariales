@@ -109,13 +109,7 @@ type StateDispatch = any
           >
             Iniciar Sesión
           </button>
-          <button
-            type="button"
-            onClick={handleRegister}
-            className="w-full py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300"
-          >
-            Registrarse
-          </button>
+          <p>Olvidaste tu contraseña? <a href="">olvidé mi contraseña</a> </p>
         </form>
         <div className="w-1/2 hidden md:flex items-center justify-center bg-gray-200">
           <img
