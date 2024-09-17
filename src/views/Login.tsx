@@ -12,9 +12,7 @@ export default function Login() {
   const { login } = useAuth();
 
 
-  const handleRegister = () => {
-    navigate("/register");
-  };
+ 
 
   const handleSubmit = () => {
     const user={
